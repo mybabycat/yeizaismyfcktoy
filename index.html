@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><img src="logo.png" alt="logo">Spotify</li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="songList">
+            <h1>My Dummy's Fav Songs</h1>
+            <div class="song-container">
+                <div class="songItem" data-index="0">
+                    <img src="covers/how deep is your love.png" alt="1">
+                    <span>How Deep is Your  Love</span>
+                    <span class="songlistplay"><span class="songDuration">0:00</span></span>
+                </div>
+                <div class="songItem" data-index="1">
+                    <img src="covers/shadows in the moonlight.jpg" alt="1">
+                    <span>Shadows in the Moonlight</span>
+                    <span class="songlistplay"><span class="songDuration">0:00</span></span>
+                </div>
+                <div class="songItem" data-index="2">
+                    <img src="covers/yesterday once more.jpg" alt="1">
+                    <span>Yesterday Once More</span>
+                    <span class="songlistplay"><span class="songDuration">0:00</span></span>
+                </div>
+                
+            </div>
+        </div>
+        <div class="songBanner"></div>
+    </div>
+    <div class="bottom">
+        <input type="range" name="range" id="myProgressBar" value="0" min="0" max="100">
+        <div class="icons">
+            <!-- fontawesome icons -->
+            <i class="fa-solid fa-3x fa-backward-step" id="previous"></i> 
+            <i class="fa-sharp fa-3x fa-solid fa-circle-play" id="masterPlay"></i>
+            <i class="fa-solid fa-3x fa-forward-step" id="next"></i>
+
+        </div>
+        <!-- <div class="songInfo">
+            <img src="playing.gif" alt="" width="42px">
+        </div> -->
+    </div>
+
+    <script src="https://kit.fontawesome.com/12b2d01b49.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
